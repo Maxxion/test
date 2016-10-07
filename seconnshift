@@ -1,0 +1,51 @@
+Configuring Git in Command-Line
+*******************************
+
+git help
+
+git config --global user.name "IT Support"			//Name
+git config --global user.email "itsupport@maxxion.com"	//Email
+git config --global color.ui "auto"				//Colour
+git config --global core.editor "vim"				//Editor
+
+
+Steps for file Pushing & Committing
+***********************************
+
+cd /home/hoshin/sample_project						//enter the project location
+git init											//Initialize Git
+git add .											// "." implies all files in that directory.
+git status										//Initiat commit: Committed files.
+git commit -m "First all from sample_project"			//Initializing committed files to git. "First all from sample_project" is just a description.
+git status										//The cchanged are get committed.
+git remote add origin https://github.com/Maxxion/test.git	//Settting the location in Git for pushing.
+git remote -v										//To know the location.
+git push origin master								//Pushing the committed files to Git Respository named "test". It promtps Username & Password: Maxxion & =s0j|K?}+I
+
+
+Steps to Pull an entire Project to a server
+*******************************************
+
+ssh -p 69 itsupport@107.21.97.50
+its@test.dev
+sudo su -
+su - hoshin
+git config --global user.name "hoshin"
+git config --global user.email "itsupport@maxxion.com"
+git config --global color.ui "auto"
+git config --global core.editor "vim"
+
+git init
+cd ~/											//Go to the location where you want the project to be located.
+git remote add origin https://github.com/Maxxion/test.git
+git remote -v
+git pull origin master
+
+	OR get the same using clone
+
+git init
+cd ~/											//Go to the location where you want the project to be located.
+git remote add origin https://github.com/Maxxion/tgit pull origin masterest.git
+git remote -v
+git clone https://github.com/Maxxion/test.git
+
